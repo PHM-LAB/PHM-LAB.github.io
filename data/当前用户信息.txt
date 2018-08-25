@@ -1,0 +1,328 @@
+{
+    "Result": 0,
+    "ResultMessage": "null",
+    "TotalPages": "1",
+    "TotalRecord": "20",
+    "BidList": [{
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    },
+    {
+        "Title": "测试使用",
+        "ListingId": "223423",
+        "Months": "10",
+        "Rate": "10",
+        "Amount": "10000",
+        "BidAmount": "80"
+    }
+    ]
+}

@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分析报告</title>
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="css/nifty.min.css" rel="stylesheet">
+
+
+    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
+    <link href="css/nifty-demo-icons.min.css" rel="stylesheet">
+
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="css/nifty-demo-icons.min.css" rel="stylesheet">
+    <link href="css/nifty-demo.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+    p{text-indent:2em;font-family:tahoma,arial,"Hiragino Sans GB",宋体,sans-serif }
+</style>
+        
+    
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <link href="css/pace.min.css" rel="stylesheet">
+   
+    <script src="js/pace.min.js"></script>
+
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="js/nifty.min.js"></script>
+    <script src="js/icons.js"></script>
+
+
+
+
+    <!--=================================================-->
+    
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="js/nifty-demo.min.js"></script>
+       
+
+</head>
+
+<body>
+
+    <div id="container" class="effect aside-float aside-bright mainnav-lg">
+        
+        <!--NAVBAR-->
+        <!--===================================================-->
+        <header id="navbar">
+            <div id="navbar-container" class="boxed">
+
+                <!--Brand logo & name-->
+                <!--================================-->
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="picture/logo.jpg" alt="Nifty Logo" class="brand-icon">
+                        <div class="brand-title">
+                            <span class="brand-text">PHM-LAB</span>
+                        </div>
+                    </a>
+                </div>
+                <!--================================-->
+                <!--End brand logo & name-->
+
+
+                <!--Navbar Dropdown-->
+                <!--================================-->
+                <div class="navbar-content clearfix">
+                    <ul class="nav navbar-top-links pull-left">
+
+                        <!--Navigation toogle button-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="demo-pli-view-list"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="nav navbar-top-links pull-right">
+
+                       
+
+
+
+                        <!--User dropdown-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li id="dropdown-user" class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                                <span class="pull-right">
+                                    <!--<img class="img-circle img-user media-object" src="picture/1.png" alt="Profile Picture">-->
+                                    <i class="demo-pli-male ic-user"></i>
+                                </span>
+                                <div class="username hidden-xs">User</div>
+                            </a>
+
+
+                            <div class="dropdown-menu dropdown-menu-md dropdown-menu-right panel-default" style="min-width: 120px">
+
+                                <!-- Dropdown heading  -->
+                                
+
+
+                                <!-- User dropdown menu -->
+                                <ul class="head-list">
+                                    
+                                    <li>
+                                        <a href="pages-login.html" >
+                                        <i class="demo-pli-unlock icon-lg icon-fw"></i>Logout
+                                    </a>
+                                    </li>
+                                   
+                                </ul>
+                                
+                            </div>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End user dropdown-->
+
+                        
+                    </ul>
+                </div>
+                <!--================================-->
+                <!--End Navbar Dropdown-->
+
+            </div>
+        </header>
+        <!--===================================================-->
+        <!--END NAVBAR-->
+
+        <div class="boxed">
+
+            <!--CONTENT CONTAINER-->
+            <!--===================================================-->
+            <div id="content-container">
+
+                <!--Page content-->
+                <!--===================================================-->
+                <div id="page-content">
+                    
+					
+                    
+                    <!--Morris Charts -->
+                    
+                    <!--===================================================-->
+                   <div class="row">
+                    <div class="col-lg-2 col-md-2 col-xs-2 col-sm-2"></div>
+                   <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+                    <div class="jumbotron text-main" style="background: white">
+                    <p  style="text-align: center;font-weight: bold">信用标的逾期率报告</p>
+
+                    <p style="font-size: 1em;text-align: center;">拍拍贷 & PHM-LAB</p>
+                        <div class="pad-btm" style="text-align: center;">
+                                        <small class="text-muted">Tags:</small>
+                                        <a class="label label-mint" href="#">逾期</a>
+                                        <a class="label label-purple" href="#">逾期率</a>
+                                        <a class="label label-success" href="#">标的属性</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2017-07-28</span>
+                                    </div>
+                                    <hr class="hr-wide">
+                                     <h1 style="font-size: 50px"><a role="button" class="btn btn-primary btn-sm" >数据背景</a></h1>
+                                     <p>数据来自拍拍贷信用标的，包含了成交时间从2015年1月1日到2017年1月30日的328,553支信用标。
+这些信用标总借款金额14.5亿。截至目前为止，已还本金7.8亿，已还利息近0.8亿，已逾期还款本金近1亿。
+</p>
+<h1 style="font-size: 50px"><a role="button" class="btn btn-primary btn-sm" >目的</a></h1><p>通过计算不同关键属性值对应的逾期率，分析找出高逾期率对应的属性值，警示投资用户避开该类标的。</p>
+<h1 style="font-size: 50px"><a role="button" class="btn btn-primary btn-sm" >逾期用户及逾期率定义</a></h1>
+<p>逾期用户：<span style="color: red">借款人在还款期数超过4期后，只要存在1期未还款，即判定为逾期用户。</span>
+</p><p>逾期率：逾期用户/总用户。
+</p>
+<h1 style="font-size: 50px"><a role="button" class="btn btn-primary btn-sm" >标的关键属性对逾期率的影响</a></h1>
+<h4>借款人属性</h4>
+
+<p>从性别来看，男性借款人的逾期率要高于女性借款人；从年龄区间来看，各年龄区间的用户的逾期率差距不大，但中年用户的逾期率更低。值得注意的用户的是否首次借款，首次借款用户的逾期率更高。</p>
+<div style="text-align: center;width: 100%"><img src="picture/j8.png" style="width: 30%;height: 300px"><img src="picture/j9.png" style="width: 30%;height: 300px"></div><div style="text-align: center;width: 100%"><img src="picture/j2.png" style="width:70%"></div>
+<p>投资人初始评级中<span style="color: red">E</span>和<span style="color: red">F</span>的用户相比其余四个等级具有较高的逾期率。同时这也说明拍拍贷在用户初始评级上的风控措施效果很好，其初始评级是值得信赖的！</p>
+<div style="text-align: center;width: 100%"><img src="picture/j3.png" style="width:70%"></div>
+
+<h1 style="font-size: 50px"><a role="button" class="btn btn-primary btn-sm" >结论</a></h1>
+<p style="color:red">投资警示：避开<span style="font-weight: bold">首次借款用户</span>的标的，相信拍拍贷对用户的初始评级，选择A、B、C三类标的。偏向女性借款人和中年借款人。</p>
+<hr>
+<h4>标的属性</h4>
+<p>借款利率在22以上的标的的逾期率达到<span>32.9%</span>，存在很大风险。</p>
+<div style="text-align: center;width: 100%"><img src="picture/j4.png" style="width:70%"></div>
+<p>借款金额超过2万的标的的逾期率达到<span>16.6%</span>，存在较大风险。同时可以看出，借款金额与逾期率基本呈正相关，借款金额越大，逾期率越大。</p>
+<div style="text-align: center;width: 100%"><img src="picture/j5.png" style="width:70%"></div>
+<p>借款期限超过12个月的标的的逾期率达到<span>33.8%</span>，存在很大风险。借款期限越长，后续越容易出现逾期还款的情况。</p>
+<div style="text-align: center;width: 100%"><img src="picture/j6.png" style="width:70%"></div>
+<p>标的为“普通”借款类型的逾期率达到<span>18%</span>，存在较大大风险。其次为“电商”、“其他”和“APP闪电”。</p>
+<div style="text-align: center;width: 100%"><img src="picture/j7.png" style="width:70%"></div>
+
+<h1 style="font-size: 50px"><a role="button" class="btn btn-primary btn-sm" >结论</a>
+<p style="color: red">投资警示：避开<span style="font-weight: bold">超高利率、大额标的</span>和<span style="font-weight: bold">长期借款期限</span>的标的。借款类型上可以偏向“APP闪电”等。</p>
+ <hr class="hr-wide">
+ <p><span>上一篇：<a class="box-inline" href="#">无</a></span></p>
+ <p><span>下一篇：</span><a class="btn-link text-primary box-inline" href="fengxianfenxi.html">标的风险分析报告</a></p>
+
+
+                     
+
+                        
+                    </div>
+                            
+                        </div></div>
+                    
+                    
+					
+					
+					
+                </div>
+                <!--===================================================-->
+                <!--End page content-->
+
+
+            </div>
+            <!--===================================================-->
+            <!--END CONTENT CONTAINER-->
+
+            
+            <!--MAIN NAVIGATION-->
+            <!--===================================================-->
+            <nav id="mainnav-container">
+                <div id="mainnav">
+
+                    <!--Menu-->
+                    <!--================================-->
+                    <div id="mainnav-menu-wrap">
+                        <div class="nano">
+                            <div class="nano-content">
+
+                                <ul id="mainnav-menu" class="list-group">
+						
+						            
+                                   <li >
+                                        <a href="index.html">
+                                            <i class="demo-psi-home" style="width:24px"></i>
+                                            <span class="menu-title">
+                                                <strong>首页</strong>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <!--Category name-->
+						            <li class="list-header"> 标分析</li>
+                        
+                                    <!--Menu list item-->
+                                    
+                        
+                                    <!--Menu list item-->
+                                   <li>
+                                        <a href="标的基本信息.html">
+                                            <i class="fa fa-pie-chart" style="width:24px"></i>
+                                            <span class="menu-title">
+                                                <strong>历史标的基本信息</strong>
+                                            </span>
+                                            
+                                        </a>
+                        
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="整体用户信息.html">
+                                            <i class="fa fa-bar-chart" style="width:24px"></i>
+                                            <span class="menu-title">
+                                                <strong>历史整体用户信息</strong>
+                                            </span>
+                                            
+                                        </a>
+                        
+                                    </li>
+                                    <!--Menu list item-->
+                                   
+						          
+                                    <li>
+                                        <a href="借款人地图.html">
+
+                                          <i class="fa fa-map-marker" style="width:22px"></i>
+                                            <span class="menu-title">
+                                                <strong>借款人地图</strong>
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <li class="list-header">标预测</li>
+						
+						            <!--Menu list item-->
+						            <li >
+						                <a href="趋势预测.html">
+						                    <i class="fa fa-line-chart" style="width:24px"></i>
+						                    <span class="menu-title">趋势预测</span>
+											
+						                </a>
+						
+						                
+						            </li>
+						
+						            <!--Menu list item-->
+						           <!--  <li >
+						                <a href="用户评级.html">
+						                   <i class="demo-psi-medal-2"></i>
+						                    <span class="menu-title">用户评级</span>
+											
+						                </a>
+						            </li> -->
+						
+						            <!--Menu list item-->
+                                    <li>
+                                        <a href="宏观指数.html">
+                                            <i class="fa fa-signal"></i>
+                                            <span class="menu-title">宏观指数</span>
+                                            
+                                        </a>
+                                    </li>
+						            <li >
+						                <a href="舆情监控.html">
+						                    <i class="fa fa-eye"></i>
+						                    <span class="menu-title">舆情监控</span>
+											
+						                </a>
+						            </li> 
+                                    <li class="list-divider"></li>
+                                    <li class="active-link">
+                                        <a href="博客.html">
+                                            <i class=" fa fa-leanpub"></i>
+                                            <span class="menu-title">BLOG</span>
+                                            
+                                        </a>
+                                    </li>
+                                   
+                                    <li>
+                                        <a href="关于我们.html">
+                                            <i class="demo-psi-male"></i>
+                                            <span class="menu-title">关于我们</span>
+                                            
+                                        </a>
+                                    </li>
+						                                       </ul>
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--================================-->
+                    <!--End menu-->
+
+                </div>
+            </nav>
+            <!--===================================================-->
+            <!--END MAIN NAVIGATION-->
+
+        </div>
+
+        <!-- FOOTER -->
+        <!--===================================================-->
+        <footer id="footer">
+
+           <p class="pad-lft">Copyright&#0169; 2017 PHM-LAB  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;All Rights Reserved </p>
+
+        </footer>
+        <!--===================================================-->
+        <!-- END FOOTER -->
+
+        <!-- SCROLL PAGE BUTTON -->
+        <!--===================================================-->
+        <button class="scroll-top btn">
+            <i class="pci-chevron chevron-up"></i>
+        </button>
+        <!--===================================================-->
+    </div>
+    <!--===================================================-->
+    <!-- END OF CONTAINER -->
+   
+</body>
+</html>

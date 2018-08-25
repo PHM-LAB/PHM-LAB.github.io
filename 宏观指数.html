@@ -1,0 +1,949 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宏观指数</title>
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="css/nifty.min.css" rel="stylesheet">
+
+
+    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
+    <link href="css/nifty-demo-icons.min.css" rel="stylesheet">
+
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="css/nifty-demo-icons.min.css" rel="stylesheet">
+    <link href="css/nifty-demo.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        
+    
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <link href="css/pace.min.css" rel="stylesheet">
+    <style type="text/css">
+        .panel-body{
+            height:400px;
+            /*background: url("images/bk.jpg")*/
+        }
+        .btn{
+            background: #e6eaed;
+            color: #555
+        }
+         
+    </style>
+    <script src="js/pace.min.js"></script>
+
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="js/nifty.min.js"></script>
+    <script src="js/icons.js"></script>
+
+
+
+
+    <!--=================================================-->
+    
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="js/nifty-demo.min.js"></script>
+      
+
+</head>
+
+<body style="position: relative;">
+<button class="btn btn-default btn-active-success add-popover" data-toggle="popover" data-container="body" data-placement="right" data-original-title="拍拍贷总体指数" data-content="拍拍贷总体指数是根据拍拍贷标的投资情况与模型预测的违约率情况加权得到，反映拍拍贷平台上整体标的的健康情况，投资者可以通过该指数进行投资决策。" style="z-index: 24;position: absolute;top:200px;left:70px;">面板1说明</button>
+<button class="btn btn-default btn-active-success add-popover" data-toggle="popover" data-container="body" data-placement="left" data-original-title="拍拍贷平台统计概况" data-content="借款情况及总累计借款情况" style="z-index: 24;position: absolute;top:200px;right:30px;">面板2说明</button>
+<button class="btn btn-default btn-active-success add-popover" data-toggle="popover" data-container="body" data-placement="right" data-original-title=" 拍拍贷TOTAL、TOP50、TOP100和TOP300指数" data-content="类似于上证指数，分别选取拍拍贷平台上整体以及价值最高的前50、300、500标的作为成分标的计算得到。" style="z-index: 24;position: absolute;top:400px;left:70px;">面板3说明</button>
+<button class="btn btn-default btn-active-success add-popover" data-toggle="popover" data-container="body" data-placement="left" data-original-title="拍拍贷每日成交量统计" data-content="" style="z-index: 24;position: absolute;top:900px;right:30px;">面板4说明</button>
+<button class="btn btn-default btn-active-success add-popover" data-toggle="popover" data-container="body" data-placement="right" data-original-title="RSI指数" data-content="反映市场在一定时期内的景气程度，投资建议：80—100极强，50—80强投资，20—50弱观望，0—20极弱投资。" style="z-index: 24;position: absolute;top:1050px;left:70px;">面板5说明</button>
+    <div id="container" class="effect aside-float aside-bright mainnav-sm">
+        
+        <!--NAVBAR-->
+        <!--===================================================-->
+        <header id="navbar">
+            <div id="navbar-container" class="boxed">
+
+                <!--Brand logo & name-->
+                <!--================================-->
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="picture/logo.jpg" alt="Nifty Logo" class="brand-icon">
+                        <div class="brand-title">
+                            <span class="brand-text">PHM-LAB</span>
+                        </div>
+                    </a>
+                </div>
+                <!--================================-->
+                <!--End brand logo & name-->
+
+
+                <!--Navbar Dropdown-->
+                <!--================================-->
+                <div class="navbar-content clearfix">
+                    <ul class="nav navbar-top-links pull-left">
+
+                        <!--Navigation toogle button-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="demo-pli-view-list"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="nav navbar-top-links pull-right">
+
+                       
+
+
+
+                        <!--User dropdown-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li id="dropdown-user" class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                                <span class="pull-right">
+                                    <!--<img class="img-circle img-user media-object" src="picture/1.png" alt="Profile Picture">-->
+                                    <i class="demo-pli-male ic-user"></i>
+                                </span>
+                                <div class="username hidden-xs">User</div>
+                            </a>
+
+
+                            <div class="dropdown-menu dropdown-menu-md dropdown-menu-right panel-default" style="min-width: 120px">
+
+                                <!-- Dropdown heading  -->
+                                
+
+
+                                <!-- User dropdown menu -->
+                                <ul class="head-list">
+                                    
+                                   
+                                    <li>
+                                        <a href="pages-login.html" >
+                                        <i class="demo-pli-unlock icon-lg icon-fw"></i>Logout
+                                    </a>
+                                    </li>
+                                   
+                                </ul>
+                                
+                            </div>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End user dropdown-->
+
+                        
+                    </ul>
+                </div>
+                <!--================================-->
+                <!--End Navbar Dropdown-->
+
+            </div>
+        </header>
+        <!--===================================================-->
+        <!--END NAVBAR-->
+
+        <div class="boxed">
+
+            <!--CONTENT CONTAINER-->
+            <!--===================================================-->
+            <div id="content-container">
+
+                <!--Page content-->
+                <!--===================================================-->
+                <div id="page-content">
+
+                    
+					<h4 class="text-main">宏观指数</h4><P style="color: gray;font-size: 1em;">目前指数仅涵盖拍拍贷“信用标的”</P><P style="color: gray;font-size: 1em;">鉴于官方公开的数据只到17年1月，为了更好的展示效果，我们采用模型对后续的数据进行了预测。</P><hr >
+                    
+                    <!--Morris Charts -->
+                    <!--===================================================-->
+                   
+                    <div class="row">
+                    <div class="col-lg-1 col-md-1 col-xs-1 col-sm-1"></div>
+                        <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                            <div class="panel media middle">
+                                        <div class="media-left bg-gray pad-all" style="font-size: 1.5em;width:30%;color: #555">
+                                           拍拍贷总体指数(每日更新)
+                                        </div>
+                                        <div class="media-body pad-all" style="position: relative;">
+                                        <div class="row">
+                                            <div  class="text-5x mar-no text-semibold" style="color: #d81e06;width:70%;float:left;line-height: 100px;height:80px;font-size: 2em" >
+                                            <span id="total">loading</span><img src="" style="margin-top: -7%" id="flag"></div>
+                                            <div style="width: 30%;position: absolute;right:0">
+                                                <p style="font-size: 1.5em;color: #d81e06" id="updown">loading</p><p style="font-size: 1.5em;color: #d81e06" id="rate">loading</p>
+                                            </div></div>
+                                          <div style="width: 100%">
+                                            <hr>
+                                            <p class="text-muted mar-no" id="getdata" style="font-size: 1em;color: #555">获取当前时间...</p></div>
+
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                            <div class="panel media middle">
+                                      
+                                        <div class="media-body pad-all" >
+                                       <ul style="list-style: none;font-size: 1em;line-height: 43px;color: #555">
+             <li>
+               
+                <span >昨日最高借款金额：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: rgba(109, 188, 191, 0.9);" id="highest">loading</strong></span>
+                
+            </li>
+    
+            <li>
+                <span  >昨日累计成功借款金额：<strong style='color:orange' id="success_rent_money">loading</strong></span>
+               
+               
+            </li>
+           
+            <li>
+                <span >总累计成功借款金额：&nbsp;&nbsp;&nbsp;&nbsp;<strong  style="color:#FF8888 " id="total_success_money">loading</strong></span>
+                
+               
+            </li>
+          
+        </ul>
+
+                                        </div>
+                                        <div class="media-body pad-all" >
+                                       <ul style="list-style: none;font-size: 1em;line-height: 43px;color: #555">
+             <li>
+               
+                
+                <span >昨日最低借款金额：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: rgba(109, 188, 191, 0.9);" id="lowest">loading</strong></span>
+            </li>
+    
+            <li>
+              
+                <span >昨日累计成功借款数量：<strong  style='color:orange' id="success_rent_num">loading</strong></span>
+               
+            </li>
+           
+            <li>
+                
+                <span >总累计成功借款数量：&nbsp;&nbsp;&nbsp;&nbsp;<strong  style='color:#FF8888 ' id="total_success_num">loading</strong></span>
+               
+            </li>
+          
+        </ul>
+
+
+
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+                    <div class="row"><div class="col-lg-1 col-md-1 col-xs-1 col-sm-1"></div>
+                    <div class="col-lg-10 col-md-10 col-xs-10 col-sm-10" >
+                    <ul style="list-style: none;margin:0px;padding:0px"><li class="btn  btn-lg" style="float: left;background:#42a5f5;color: white " onclick="show(4)" id="b4">TOTAL</li><li class="btn  btn-lg" style="float: left; " onclick="show(1)" id="b1">TOP50</li><li class="btn  btn-lg" style="float: left;" onclick="show(2)" id="b2">TOP100</li><li class="btn  btn-lg" style="float: left;" onclick="show(3)" id="b3">TOP300</li></ul>
+                    
+                    <div class="panel media middle" id="kline" style="height: 800px;width: 100%">
+
+                   
+</div></div>
+                    </div>
+					
+					
+					
+                </div>
+                <!--===================================================-->
+                <!--End page content-->
+
+
+            </div>
+            <!--===================================================-->
+            <!--END CONTENT CONTAINER-->
+
+            
+            <!--MAIN NAVIGATION-->
+            <!--===================================================-->
+            <nav id="mainnav-container">
+                <div id="mainnav">
+
+                    <!--Menu-->
+                    <!--================================-->
+                    <div id="mainnav-menu-wrap">
+                        <div class="nano">
+                            <div class="nano-content">
+
+                                <ul id="mainnav-menu" class="list-group">
+						
+						            
+                                   <li >
+                                        <a href="index.html">
+                                            <i class="demo-psi-home" style="width:24px"></i>
+                                            <span class="menu-title">
+                                                <strong>首页</strong>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <!--Category name-->
+						            <li class="list-header"> 标分析</li>
+                        
+                                    <!--Menu list item-->
+                                    
+                        
+                                    <!--Menu list item-->
+                                   <li>
+                                        <a href="标的基本信息.html">
+                                            <i class="fa fa-pie-chart" style="width:24px"></i>
+                                            <span class="menu-title">
+                                                <strong>历史标的基本信息</strong>
+                                            </span>
+                                            
+                                        </a>
+                        
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="整体用户信息.html">
+                                            <i class="fa fa-bar-chart" style="width:24px"></i>
+                                            <span class="menu-title">
+                                                <strong>历史整体用户信息</strong>
+                                            </span>
+                                            
+                                        </a>
+                        
+                                    </li>
+                                    <!--Menu list item-->
+                                    
+						          
+                                    <li>
+                                        <a href="借款人地图.html">
+
+                                          <i class="fa fa-map-marker" style="width:22px"></i>
+                                            <span class="menu-title">
+                                                <strong>借款人地图</strong>
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <li class="list-header">标预测</li>
+						
+						            <!--Menu list item-->
+						            <li >
+						                <a href="趋势预测.html">
+						                    <i class="fa fa-line-chart" style="width:24px"></i>
+						                    <span class="menu-title">趋势预测</span>
+											
+						                </a>
+						
+						                
+						            </li>
+						
+						            <!--Menu list item-->
+						           <!--  <li >
+						                <a href="用户评级.html">
+						                   <i class="demo-psi-medal-2"></i>
+						                    <span class="menu-title">用户评级</span>
+											
+						                </a>
+						            </li> -->
+						
+						            <!--Menu list item-->
+                                    <li class="active-link">
+                                        <a href="宏观指数.html">
+                                            <i class="fa fa-signal"></i>
+                                            <span class="menu-title">宏观指数</span>
+                                            
+                                        </a>
+                                    </li>
+						            <li >
+						                <a href="舆情监控.html">
+						                    <i class="fa fa-eye"></i>
+						                    <span class="menu-title">舆情监控</span>
+											
+						                </a>
+						            </li>
+                                    <li class="list-divider"></li>
+                                    <li >
+                                        <a href="博客.html">
+                                            <i class=" fa fa-leanpub"></i>
+                                            <span class="menu-title">BLOG</span>
+                                            
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="关于我们.html">
+                                            <i class="demo-psi-male"></i>
+                                            <span class="menu-title">关于我们</span>
+                                            
+                                        </a>
+                                    </li>
+						                                       </ul>
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--================================-->
+                    <!--End menu-->
+
+                </div>
+            </nav>
+            <!--===================================================-->
+            <!--END MAIN NAVIGATION-->
+
+        </div>
+
+        <!-- FOOTER -->
+        <!--===================================================-->
+        <footer id="footer">
+
+        <p class="pad-lft">Copyright&#0169; 2017 PHM-LAB  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;All Rights Reserved </p>
+
+        </footer>
+        <!--===================================================-->
+        <!-- END FOOTER -->
+
+        <!-- SCROLL PAGE BUTTON -->
+        <!--===================================================-->
+        <button class="scroll-top btn">
+            <i class="pci-chevron chevron-up"></i>
+        </button>
+        <!--===================================================-->
+    </div>
+    <!--===================================================-->
+    <!-- END OF CONTAINER -->
+     
+      
+  <script src="js/echarts.min.js"></script>
+                    <script type="text/javascript">
+                    window.onload=function(){
+//定时器每秒调用一次fnDate()
+setInterval(function(){
+fnDate();
+},1000);
+}
+//js 获取当前时间
+function fnDate(){
+var oDiv=document.getElementById("getdata");
+var date=new Date();
+var year=date.getFullYear();//当前年份
+var month=date.getMonth();//当前月份
+var data=date.getDate();//天
+var hours=date.getHours();//小时
+var minute=date.getMinutes();//分
+var second=date.getSeconds();//秒
+var times=year+"-"+fnW((month+1))+"-"+fnW(data);
+var monthday=fnW((month+1))+"-"+fnW(data);
+oDiv.innerHTML=times;
+return times;
+}
+//补位 当某个字段不是两位数时补0
+function fnW(str){
+var num;
+str>9?num=str:num="0"+str;
+return num;
+} 
+function outputdollars(number) {
+    if (number.length <= 3)
+        return (number == '' ? '0' : number);
+    else {
+        if(number.substring(0,1)=="-"){
+            var number = number.substring(1);
+              var mod = number.length % 3;
+        var output = (mod == 0 ? '' : (number.substring(0, mod)));
+        for (i = 0; i < Math.floor(number.length / 3); i++) {
+            if ((mod == 0) && (i == 0))
+                output += number.substring(mod + 3 * i, mod + 3 * i + 3);
+            else
+                output += ',' + number.substring(mod + 3 * i, mod + 3 * i + 3);
+        }
+        return ("-"+output);
+        }
+        else{
+        var mod = number.length % 3;
+        var output = (mod == 0 ? '' : (number.substring(0, mod)));
+        for (i = 0; i < Math.floor(number.length / 3); i++) {
+            if ((mod == 0) && (i == 0))
+                output += number.substring(mod + 3 * i, mod + 3 * i + 3);
+            else
+                output += ',' + number.substring(mod + 3 * i, mod + 3 * i + 3);
+        }
+        return (output);}
+    }
+}
+                    $(function () {
+
+
+                window.onresize = function ()　{
+            mapChart1.resize();
+            
+                }
+});
+$.ajaxSetup({async:false});
+var dd=[];
+$.getJSON("http://www.hucong.cc/ppdai/MacroindexServlet?dt="+fnDate(),function(data){
+        dd=data;
+     });
+kk50=[];
+kk100=[];
+kk300=[];
+kktotal=[];
+volume=[];
+rs1=[];rs2=[];rs3=[];rs4=[];
+time=[];
+for (var item in dd){
+    for (var date in dd[item]){
+        ss1=[];ss2=[];ss3=[];ss4=[];
+        time.push(date);
+        volume.push(dd[item][date][6]['成交量']);
+        rs1.push(dd[item][date][7]['rsi']);
+        rs2.push(dd[item][date][8]['rsi']);
+        rs3.push(dd[item][date][9]['rsi']);
+        rs4.push(dd[item][date][10]['rsi']);
+       
+           
+               
+                ss1.push(dd[item][date][2]['开盘']);
+                ss1.push(dd[item][date][2]['收盘']);
+                ss1.push(dd[item][date][2]['最低']);
+                ss1.push(dd[item][date][2]['最高']);
+
+                ss2.push(dd[item][date][3]['开盘']);
+                ss2.push(dd[item][date][3]['收盘']);
+                ss2.push(dd[item][date][3]['最低']);
+                ss2.push(dd[item][date][3]['最高']);
+                ss3.push(dd[item][date][4]['开盘']);
+                ss3.push(dd[item][date][4]['收盘']);
+                ss3.push(dd[item][date][4]['最低']);
+                ss3.push(dd[item][date][4]['最高']);
+                ss4.push(dd[item][date][5]['开盘']);
+                ss4.push(dd[item][date][5]['收盘']);
+                ss4.push(dd[item][date][5]['最低']);
+                ss4.push(dd[item][date][5]['最高']);
+
+           
+
+            kk50.push(ss1);
+            kk100.push(ss2);
+            kk300.push(ss3);
+            kktotal.push(ss4);
+        }
+    }
+   
+total=[];
+count=[];
+for(var item in dd[dd.length-1]){
+    total=dd[dd.length-1][item][0];
+    count=dd[dd.length-1][item][1];
+}
+
+
+if(total['flag']>0){
+$('#total').css('color','#d81e06');
+$('#flag').attr('src','picture/up.png');
+$('#updown').css('color','#d81e06');
+$('#rate').css('color','#d81e06');
+
+}
+if(total['flag']<0){
+$('#total').css('color','#008000');
+$('#flag').attr('src','picture/down.png');
+$('#updown').css('color','#008000');
+$('#rate').css('color','#008000');
+
+}
+$('#total').html(outputdollars(''+Math.ceil(total['总体指数'])));
+$('#updown').html(outputdollars(''+Math.ceil(total['涨跌'])));
+$('#rate').html((total['涨跌比率']*100).toFixed(2)+"%");
+$('#highest').html(outputdollars(""+Math.ceil(count['当日最高借款金额'])));
+$('#lowest').html(outputdollars(""+Math.ceil(count['当日最低借款金额'])));
+$('#success_rent_money').html(outputdollars(""+Math.ceil(count['当日累计成功借款金额'])));
+$('#success_rent_num').html(outputdollars(""+Math.ceil(count['当日累计成功借款数量'])));
+$('#total_success_money').html(outputdollars(""+Math.ceil(count['总累计成功借款金额'])));
+$('#total_success_num').html(outputdollars(""+Math.ceil(count['总累计成功借款数量'])));
+//数组处理
+
+
+
+
+//MA计算公式
+function calculateMA(dayCount,data) {
+  var result = [];
+  for (var i = 0, len = time.length; i < len; i++) {
+      if (i < dayCount) {
+          result.push('-');
+          continue;
+      }
+      var sum = 0;
+      for (var j = 0; j < dayCount; j++) {
+          sum += data[i - j][1];
+      }
+      result.push((sum / dayCount).toFixed(2));
+  }
+  return result;
+}
+var mapChart1 = echarts.init(document.getElementById("kline"));
+var option = {
+     backgroundColor: '#21202D',
+  title: {
+      text: '',
+      left: 0
+  },
+  tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+          type: 'line'
+      }
+  },
+  legend: {
+      data: ['KLine', 'MA5','MA10','MA20','MA30'],
+      textStyle:{color: '#8392A5' }
+  },
+  grid: [           {
+      left: '6%',
+      right: '1%',
+      height: '55%'
+  },{
+      left: '6%',
+      right: '1%',
+      top: '67%',
+      height: '10%'
+  },{
+      left: '6%',
+      right: '1%',
+      top: '80%',
+      height: '14%'
+  }],
+  xAxis: [{
+      type: 'category',
+      data: time,
+      scale: true,
+      boundaryGap: false,
+      axisLine: { onZero: false,
+      lineStyle: { color: '#8392A5' } },
+      splitLine: { show: false },
+      splitNumber: 20,
+      min: 'dataMin',
+      max: 'dataMax'
+  },{
+      type: 'category',
+      gridIndex: 1,
+      data: time,
+      axisLine: { 
+      lineStyle: { color: '#8392A5' } },
+      axisLabel: {show: false}
+  },{
+      type: 'category',
+      gridIndex: 2,
+      data: time,
+      axisLine: { 
+      lineStyle: { color: '#8392A5' } },
+      axisLabel: {show: false}
+  }],
+  yAxis: [{
+      scale: true,
+      splitArea: {
+          show: false
+      },
+       splitLine: { show: false },
+       axisLine: {
+      lineStyle: { color: '#8392A5' } },
+  },{
+      gridIndex: 1,
+      splitNumber: 3,
+     axisLine: { onZero: false,
+      lineStyle: { color: '#8392A5' } },
+      axisTick: {show: false},
+      splitLine: {show: false},
+      axisLabel: {show: true}
+  },{
+      gridIndex: 2,
+      splitNumber: 4,
+     axisLine: { onZero: false,
+      lineStyle: { color: '#8392A5' } },
+      axisTick: {show: false},
+      splitLine: {show: false},
+      axisLabel: {show: true}
+  }],
+  dataZoom: [{
+        textStyle: {
+            color: '#8392A5'
+        },
+        handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z',
+        handleSize: '80%',
+        dataBackground: {
+            areaStyle: {
+                color: '#8392A5'
+            },
+            lineStyle: {
+                opacity: 0.8,
+                color: '#8392A5'
+            }
+        },
+        handleStyle: {
+            color: '#fff',
+            shadowBlur: 3,
+            shadowColor: 'rgba(0, 0, 0, 0.6)',
+            shadowOffsetX: 2,
+            shadowOffsetY: 2,
+        },
+         type: 'inside',
+          xAxisIndex: [0, 0],
+          start: 75,
+          end: 100
+    },
+          {
+          show: true,
+          xAxisIndex: [0, 1],
+          type: 'slider',
+          top: '97%',
+          start: 75,
+          end: 100
+    },{
+      show: false,
+      xAxisIndex: [0, 2],
+      type: 'slider',
+      start: 75,
+      end: 100
+  }],
+  series: [{
+          name: 'KLine',
+          type: 'candlestick',
+          data: kktotal,
+          itemStyle: {
+              normal: {
+                  color: '#ef232a',
+                  color0: '#14b143',
+                  borderColor: '#ef232a',
+                  borderColor0: '#14b143'
+              }
+          },
+          
+          markPoint: {
+              data: [
+                  {type: 'max', name: '最大值'},
+                  {type: 'min', name: '最小值'}
+              ]
+          },
+         
+      }, {
+          name: 'MA5',
+          type: 'line',
+          data: calculateMA(5,kktotal),
+          smooth: true,
+          lineStyle: {
+              normal: {
+                  opacity: 0.5
+              }
+          }
+      },
+      {
+          name: 'MA10',
+          type: 'line',
+          data: calculateMA(10,kktotal),
+          smooth: true,
+          lineStyle: {
+              normal: {
+                  opacity: 0.5
+              }
+          }
+      },
+      {
+          name: 'MA20',
+          type: 'line',
+          data: calculateMA(20,kktotal),
+          smooth: true,
+          lineStyle: {
+              normal: {
+                  opacity: 0.5
+              }
+          }
+      },
+      {
+          name: 'MA30',
+          type: 'line',
+          data: calculateMA(30,kktotal),
+          smooth: true,
+          lineStyle: {
+              normal: {
+                  opacity: 0.5
+              }
+          }
+      },
+      {
+          name: 'Volumn',
+          type: 'bar',
+          xAxisIndex: 1,
+          yAxisIndex: 1,
+          data: volume,
+          itemStyle: {
+              normal: {
+                  color: function(params) {
+                      var colorList;
+                      if (volume[params.dataIndex]>volume[params.dataIndex-1]) {
+
+                          colorList = '#ef232a';
+                      } else {
+                          colorList = '#14b143';
+                      }
+                      return colorList;
+                  },
+              }
+          }
+      },{
+          name: 'rsi',
+          type: 'line',
+          xAxisIndex: 2,
+          yAxisIndex: 2,
+          color:["#9955FF "],
+          data: rs4
+      }
+  ]
+};  
+ mapChart1.setOption(option, true);
+ mapChart1.on('click', function (params) {
+    var user_date=params.name;
+
+    var newdata=[];
+    for (var item in dd){
+        for(var date in dd[item]){
+            date =date;
+            if(date<=user_date){
+                newdata.push(dd[item]);
+              
+            }
+
+        }
+    }
+   alert("你现在查看的是"+user_date+"的数据(上方)");
+
+for(var item in newdata[newdata.length-1]){
+    total=newdata[newdata.length-1][item][0];
+    count=newdata[newdata.length-1][item][1];
+}
+
+
+if(total['flag']>0){
+$('#total').css('color','#d81e06');
+$('#flag').attr('src','picture/up.png');
+$('#updown').css('color','#d81e06');
+$('#rate').css('color','#d81e06');
+
+}
+if(total['flag']<0){
+$('#total').css('color','#008000');
+$('#flag').attr('src','picture/down.png');
+$('#updown').css('color','#008000');
+$('#rate').css('color','#008000');
+
+}
+$('#total').html(outputdollars(''+Math.ceil(total['总体指数'])));
+$('#updown').html(outputdollars(''+Math.ceil(total['涨跌'])));
+$('#rate').html((total['涨跌比率']*100).toFixed(2)+"%");
+$('#highest').html(outputdollars(""+Math.ceil(count['当日最高借款金额'])));
+$('#lowest').html(outputdollars(""+Math.ceil(count['当日最低借款金额'])));
+$('#success_rent_money').html(outputdollars(""+Math.ceil(count['当日累计成功借款金额'])));
+$('#success_rent_num').html(outputdollars(""+Math.ceil(count['当日累计成功借款数量'])));
+$('#total_success_money').html(outputdollars(""+Math.ceil(count['总累计成功借款金额'])));
+$('#total_success_num').html(outputdollars(""+Math.ceil(count['总累计成功借款数量'])));
+//数组处理
+
+
+    });
+
+
+
+
+                        function show(num){
+                            if (num==1){
+                            $("#b1").css("background","#42a5f5");
+                            $("#b2").css("background","#e6eaed");
+                            $("#b3").css("background","#e6eaed");
+                            $("#b4").css("background","#e6eaed");
+                            $("#b1").css("color","white");
+                            $("#b2").css("color","#555");
+                            $("#b3").css("color","#555");
+                            $("#b4").css("color","#555");
+                            option.series[0].data=kk50;
+                            option.series[1].data=calculateMA(5,kk50);
+                            option.series[2].data=calculateMA(10,kk50);
+                            option.series[3].data=calculateMA(20,kk50);
+                            option.series[4].data=calculateMA(30,kk50);
+                            option.series[6].data=rs1;
+                            mapChart1.setOption(option, true);
+                        }
+                             if (num==2){
+                            $("#b2").css("background","#42a5f5");
+                            $("#b1").css("background","#e6eaed");
+                            $("#b3").css("background","#e6eaed");
+                            $("#b4").css("background","#e6eaed");
+                            $("#b2").css("color","white");
+                            $("#b1").css("color","#555");
+                            $("#b3").css("color","#555");
+                            $("#b4").css("color","#555");
+                             option.series[0].data=kk100;
+                             option.series[1].data=calculateMA(5,kk100);
+                            option.series[2].data=calculateMA(10,kk100);
+                            option.series[3].data=calculateMA(20,kk100);
+                            option.series[4].data=calculateMA(30,kk100);
+                             option.series[6].data=rs2;
+                            mapChart1.setOption(option, true);
+                        }
+                             if (num==3){
+                            $("#b3").css("background","#42a5f5");
+                            $("#b2").css("background","#e6eaed");
+                            $("#b1").css("background","#e6eaed");
+                            $("#b4").css("background","#e6eaed");
+                            $("#b3").css("color","white");
+                            $("#b2").css("color","#555");
+                            $("#b1").css("color","#555");
+                            $("#b4").css("color","#555");
+                            option.series[0].data=kk300;
+                            
+                            option.series[1].data=calculateMA(5,kk300);
+                            option.series[2].data=calculateMA(10,kk300);
+                            option.series[3].data=calculateMA(20,kk300);
+                            option.series[4].data=calculateMA(30,kk300);
+                             option.series[6].data=rs3;
+                            mapChart1.setOption(option, true);
+                           
+                        }
+                        if (num==4){
+                            $("#b4").css("background","#42a5f5");
+                            $("#b2").css("background","#e6eaed");
+                            $("#b3").css("background","#e6eaed");
+                            $("#b1").css("background","#e6eaed");
+                            $("#b4").css("color","white");
+                            $("#b2").css("color","#555");
+                            $("#b3").css("color","#555");
+                            $("#b1").css("color","#555");
+                            option.series[0].data=kktotal;
+                            option.series[1].data=calculateMA(5,kktotal);
+                            option.series[2].data=calculateMA(10,kktotal);
+                            option.series[3].data=calculateMA(20,kktotal);
+                            option.series[4].data=calculateMA(30,kktotal);
+                            option.series[6].data=rs4;
+                            mapChart1.setOption(option, true);
+                        }
+
+                        }
+                    </script>
+    
+</body>
+</html>

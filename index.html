@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标的风险监控平台</title>
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="css/nifty.min.css" rel="stylesheet">
+
+
+    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
+    <link href="css/nifty-demo-icons.min.css" rel="stylesheet">
+
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="css/nifty-demo-icons.min.css" rel="stylesheet">
+    <link href="css/nifty-demo.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        
+    
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <link href="css/pace.min.css" rel="stylesheet">
+    <style type="text/css">
+        .pad-all {
+            background: url("images/bk1.jpg");
+            background-position: 100% 100%;
+    background-size: 100% auto;
+        }
+        #w {
+    background: white;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* border-bottom: 1px solid #5A5A5A; */
+}
+#w h1 {
+    font-size: 44px;
+    font-weight: 300;
+    padding-bottom: 40px;
+    color: #28324e;
+}
+ #w p {
+    padding: 0;
+    margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.features li i.fa {
+    text-align: left;
+    font-size: 34px;
+    color: #1ab394;;
+}
+ul, ol {
+  
+    margin-top: 0;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 ;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-height: 701px) { 
+#bigimg{height: 450px}  
+#h1{
+	font-size: 60px;font-weight:200;line-height: 280px
+}
+
+} 
+@media screen and (max-height: 700px) { 
+#bigimg{height: 250px}
+#h1{
+	font-size: 40px;font-weight:200;line-height: 80px
+} 
+
+} 
+    </style>
+    <script src="js/pace.min.js"></script>
+
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="js/nifty.min.js"></script>
+    <script src="js/icons.js"></script>
+
+
+
+
+
+    <!--=================================================-->
+    
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="js/nifty-demo.min.js"></script>
+
+       
+
+</head>
+
+<body>
+
+    <div id="container" class="effect aside-float aside-bright mainnav-lg">
+        
+        <!--NAVBAR-->
+        <!--===================================================-->
+        <header id="navbar">
+            <div id="navbar-container" class="boxed">
+
+                <!--Brand logo & name-->
+                <!--================================-->
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="picture/logo.jpg" alt="Nifty Logo" class="brand-icon">
+                        <div class="brand-title">
+                            <span class="brand-text">PHM-LAB</span>
+                        </div>
+                    </a>
+                </div>
+                <!--================================-->
+                <!--End brand logo & name-->
+
+
+                <!--Navbar Dropdown-->
+                <!--================================-->
+                <div class="navbar-content clearfix">
+                    <ul class="nav navbar-top-links pull-left">
+
+                        <!--Navigation toogle button-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="demo-pli-view-list"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="nav navbar-top-links pull-right">
+
+                       
+
+
+
+                        <!--User dropdown-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li id="dropdown-user" class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                                <span class="pull-right">
+                                    <!--<img class="img-circle img-user media-object" src="picture/1.png" alt="Profile Picture">-->
+                                    <i class="demo-pli-male ic-user"></i>
+                                </span>
+                                <div class="username hidden-xs">User</div>
+                            </a>
+
+
+                            <div class="dropdown-menu dropdown-menu-md dropdown-menu-right panel-default" style="min-width: 120px">
+
+                                <!-- Dropdown heading  -->
+                                
+
+
+                                <!-- User dropdown menu -->
+                                <ul class="head-list">
+                                    
+                                    
+                                    
+                                    <li>
+                                        <a href="pages-login.html" >
+                                        <i class="demo-pli-unlock icon-lg icon-fw"></i>Logout
+                                    </a>
+                                    </li>
+                                   
+                                </ul>
+                                
+                            </div>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End user dropdown-->
+
+                        
+                    </ul>
+                </div>
+                <!--================================-->
+                <!--End Navbar Dropdown-->
+
+            </div>
+        </header>
+        <!--===================================================-->
+        <!--END NAVBAR-->
+
+        <div class="boxed">
+
+            <!--CONTENT CONTAINER-->
+            <!--===================================================-->
+            <div id="content-container">
+
+                <!--Page content-->
+                <!--===================================================-->
+                <div id="page-content">
+                    
+					<div class="pad-all " id="bigimg" >
+        <h1 class="text-4x text-semibold text-light" id="h1" style="font-weight:200;text-align: center;color:#1ab394;">标的风险监控平台
+</h1> <br><br><br><br>
+       
+        
+        
+        
+    </div>
+<div id="w" class="container">
+     
+      
+<div class="row"><div class="col-lg-1"></div>
+<div class="col-lg-11">
+      <ul class="row features">
+        <li class="col-sm-4">
+          <h4><i class="fa fa-pie-chart"></i>  标的历史信息</h4>
+          <p>瞅瞅那些年的借款</p>
+        </li>
+        <li class="col-sm-4">
+          <h4><i class="fa fa-map-marker"></i>借款人地图</h4>
+          <p>瞅瞅爱借钱的省份有哪些</p>
+        </li>
+        <li class="col-sm-4">
+          <h4><i class="fa fa-line-chart" ></i>&nbsp;趋势预测</h4>
+          <p>基于回归分析的未来走势预测</p>
+        </li>
+      </ul>
+      <br>
+      <br>
+      <ul class="row features">
+        <li class="col-sm-4">
+          <h4><i class="fa fa-signal"></i> 宏观指数</h4>
+          <p>基于宏观基本面的市场指数</p>
+         
+        </li>
+        <li class="col-sm-4">
+          <h4><i class="fa fa-eye"></i>  舆情监控</h4>
+          <p>数据采集、热点分析、词图展示</p>
+         
+        </li>
+        <li class="col-sm-4">
+          <h4><i class="fa fa-leanpub"></i> BLOG</h4>
+          <p>更新基于拍拍贷数据集的分析报告</p>
+         
+        </li>
+      </ul>
+
+  </div>
+</div></div>
+
+				    
+					
+					
+                </div>
+                <!--===================================================-->
+                <!--End page content-->
+
+
+            </div>
+            <!--===================================================-->
+            <!--END CONTENT CONTAINER-->
+
+            
+            <!--MAIN NAVIGATION-->
+            <!--===================================================-->
+            <nav id="mainnav-container">
+                <div id="mainnav">
+
+                    <!--Menu-->
+                    <!--================================-->
+                    <div id="mainnav-menu-wrap">
+                        <div class="nano">
+                            <div class="nano-content">
+
+                                <ul id="mainnav-menu" class="list-group">
+						
+						            
+                                   <li class="active-link">
+                                        <a href="index.html">
+                                            <i class="demo-psi-home" style="width:24px"></i>
+                                            <span class="menu-title">
+                                                <strong>首页</strong>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <!--Category name-->
+						            <li class="list-header"> 标分析</li>
+						
+						            <!--Menu list item-->
+						            
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="标的基本信息.html">
+						                    <i class="fa fa-pie-chart" style="width:24px"></i>
+						                    <span class="menu-title">
+												<strong>历史标的基本信息</strong>
+											</span>
+											
+						                </a>
+						
+						                
+						            </li>
+                                    <li>
+                                        <a href="整体用户信息.html">
+                                            <i class="fa fa-bar-chart" style="width:24px"></i>
+                                            <span class="menu-title">
+                                                <strong>历史整体用户信息</strong>
+                                            </span>
+                                            
+                                        </a>
+                        
+                                    </li>
+						
+						            <!--Menu list item-->
+						           
+						          
+                                    <li>
+                                        <a href="借款人地图.html">
+
+                                          <i class="fa fa-map-marker" style="width:22px"></i>
+                                            <span class="menu-title">
+                                                <strong>借款人地图</strong>
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <li class="list-header">标预测</li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="趋势预测.html">
+						                    <i class="fa fa-line-chart" style="width:24px"></i>
+						                    <span class="menu-title">趋势预测</span>
+											
+						                </a>
+						
+						                
+						            </li>
+						
+						            <!--Menu list item-->
+						            <!-- <li>
+						                <a href="用户评级.html">
+						                   <i class="demo-psi-medal-2"></i>
+						                    <span class="menu-title">用户评级</span>
+											
+						                </a>
+						            </li> -->
+						
+						            <!--Menu list item-->
+                                    <li>
+                                        <a href="宏观指数.html">
+                                            <i class="fa fa-signal"></i>
+                                            <span class="menu-title">宏观指数</span>
+                                            
+                                        </a>
+                                    </li>
+						            <li>
+						                <a href="舆情监控.html">
+						                    <i class="fa fa-eye"></i>
+						                    <span class="menu-title">舆情监控</span>
+											
+						                </a>
+						            </li>
+                                    <li class="list-divider"></li>
+                                    <li >
+                                        <a href="博客.html">
+                                            <i class=" fa fa-leanpub"></i>
+                                            <span class="menu-title">BLOG</span>
+                                            
+                                        </a>
+                                    </li>
+                                        <li>
+                                        <a href="关于我们.html">
+                                            <i class="demo-psi-male"></i>
+                                            <span class="menu-title">关于我们</span>
+                                            
+                                        </a>
+                                    </li>
+                                   
+						                                       </ul>
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--================================-->
+                    <!--End menu-->
+
+                </div>
+            </nav>
+            <!--===================================================-->
+            <!--END MAIN NAVIGATION-->
+
+        </div>
+
+        <!-- FOOTER -->
+        <!--===================================================-->
+        <footer id="footer" >
+
+             <p class="pad-lft">Copyright&#0169; 2017 PHM-LAB  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;All Rights Reserved </p>
+
+        </footer>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!--===================================================-->
+        <!-- END FOOTER -->
+
+        <!-- SCROLL PAGE BUTTON -->
+        <!--===================================================-->
+        <button class="scroll-top btn">
+            <i class="pci-chevron chevron-up"></i>
+        </button>
+        <!--===================================================-->
+    </div>
+    <!--===================================================-->
+    <!-- END OF CONTAINER -->
+    <script type="text/javascript" color="6, 136, 235" opacity="0.7" zindex="-0" count="99" src="js/canvas-nest.min.js"></script>
+    <canvas id="c_n18" width="1355" height="969" style="position: fixed; top: 0px; left: 0px; z-index: -0; opacity: 0.7;"></canvas>
+</body>
+</html>
